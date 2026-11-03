@@ -4,5 +4,13 @@
         <title>Termi</title>
         <description>Most recent updates for Termi</description>
         <language>en</language>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>Tue, 03 Nov 2026 06:40:02 +0000</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/saiumesh535/termi-bin/releases/download/v0.1.0-2/Termi.zip" length="12934074" type="application/octet-stream" sparkle:edSignature="1xbr5kqC3gb3w8ixVDhgvl5tbcUIdR4bDFi2XIQiX25mNbKrkK6qCdEkGu4bU3Zm1F8rdwgB9tM07Vm/1cJoDg=="/>
+        </item>
     </channel>
 </rss>
