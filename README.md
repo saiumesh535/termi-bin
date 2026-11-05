@@ -10,7 +10,7 @@
 
 **Website:** [termi.saiumesh.dev](https://termi.saiumesh.dev)
 
-This repository hosts **public binaries and the Sparkle appcast**. Source stays private.
+This repository hosts **public binaries, the Sparkle appcast, and the Homebrew cask**. Source stays private.
 
 ---
 
@@ -43,6 +43,19 @@ This repository hosts **public binaries and the Sparkle appcast**. Source stays 
 ---
 
 ## Installation
+
+### Homebrew (custom tap)
+
+```bash
+brew tap saiumesh535/termi-bin
+brew install --cask termi
+```
+
+Upgrade later:
+
+```bash
+brew update && brew upgrade --cask termi
+```
 
 ### Manual download
 
