@@ -6,7 +6,7 @@
 [![macOS](https://img.shields.io/badge/macOS-13+-blue.svg)](https://www.apple.com/macos/)
 [![SwiftUI](https://img.shields.io/badge/SwiftUI-5.9+-orange.svg)](https://swift.org/)
 
-**Termi** is a native macOS autocomplete companion for **iTerm2 + Zsh**. Fig-style suggestions appear as you type — CLI specs, paths, and more — without leaving the terminal. Local-first: Rust completion daemon + Swift menu bar app. No cloud, no account.
+**Termi** is a native macOS autocomplete companion for **standalone terminals + Zsh**. Fig-style suggestions appear as you type — the command name itself, CLI specs, paths, and package scripts — without leaving the terminal. Local-first: Rust completion daemon + Swift menu bar app. No cloud, no account.
 
 **Website:** [termi.saiumesh.dev](https://termi.saiumesh.dev)
 
@@ -16,8 +16,9 @@ This repository hosts **public binaries, the Sparkle appcast, and the Homebrew c
 
 ## Features
 
-- **Fig-style autocomplete** — Suggestions overlay in iTerm2 as you type, with ↑↓ · Tab · ↵ · Esc.
-- **CLI specs** — Bundled completion trees for git, npm, docker, kubectl, and more.
+- **Command names** — Type `g` and the popup offers `git`, other commands on your PATH, Zsh builtins, and your aliases. The suggestion appears on the first word, before Tab.
+- **CLI specs** — Bundled completion trees for git, npm, docker, kubectl, and hundreds more.
+- **Package scripts** — `npm run`, `yarn`, `bun`, and bare `pnpm` scripts from the `package.json` in the project you’re in.
 - **Filesystem paths** — Complete directories and files when you `cd` or open paths.
 - **Companion app** — Home, Autocomplete, Integrations, Doctor, App, and About in a native SwiftUI window.
 - **Doctor** — See daemon, hook, Accessibility, and setup status in one place.
@@ -28,15 +29,18 @@ This repository hosts **public binaries, the Sparkle appcast, and the Homebrew c
 
 ## Supported terminals
 
-- **iTerm2** + **Zsh** (supported today)
-- Ghostty / Terminal.app — soon
+Any real Zsh line editor in a standalone Mac terminal:
+
+- **iTerm2**, **Terminal.app**, **Ghostty**, **kitty**, **WezTerm**, **Alacritty**, **Hyper**, **Rio**, **Tabby**, **Contour**
+
+**Warp** and IDE terminals (VS Code, Cursor, JetBrains) are unsupported.
 
 ---
 
 ## System requirements
 
 - **macOS 13** or later
-- **iTerm2** + **Zsh**
+- **Zsh** in a standalone terminal (see above)
 - Apple Silicon or Intel
 - Accessibility optional (instant Esc, better popup placement)
 
@@ -47,14 +51,19 @@ This repository hosts **public binaries, the Sparkle appcast, and the Homebrew c
 ### Homebrew (custom tap)
 
 ```bash
-brew tap saiumesh535/termi-bin
+brew tap saiumesh535/termi-bin https://github.com/saiumesh535/termi-bin
+brew trust saiumesh535/termi-bin   # Homebrew 5.0+
 brew install --cask termi
 ```
+
+On Homebrew 5.0+, `brew trust` is required once so `brew update` can refresh the tap and upgrades work.
 
 Upgrade later:
 
 ```bash
-brew update && brew upgrade --cask termi
+brew trust saiumesh535/termi-bin   # once, if you installed before trust was required
+brew update
+brew upgrade --cask termi
 ```
 
 ### Manual download
@@ -81,8 +90,8 @@ Sparkle feed: [`appcast.xml`](https://raw.githubusercontent.com/saiumesh535/term
 
 1. Launch **Termi** from Applications.
 2. Open **Integrations → Install in Zsh**.
-3. Open a **new iTerm tab** (or window).
-4. Type something like `git ` or `cd ` and watch suggestions appear.
+3. Open a **new terminal tab** (or window).
+4. Type `g` for command names, or `git ` / `cd ` / `npm run ` for the next word.
 
 **Tip:** Use **Doctor** if the popup never shows — it flags a missing hook, offline daemon, or Accessibility grant.
 
