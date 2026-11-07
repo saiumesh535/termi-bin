@@ -1,6 +1,6 @@
 cask "termi" do
-  version "0.1.1-7"
-  sha256 "4e931560d083ec9e499b872d03152b3083bd9ea55497702759eb76a974fd48a4"
+  version "0.1.1-8"
+  sha256 "9a4b7618f51f41d23d6ebe8c5460353068aa83abfec392881670f8140603499e"
 
   url "https://github.com/saiumesh535/termi-bin/releases/download/v#{version}/Termi.zip"
   name "Termi"
