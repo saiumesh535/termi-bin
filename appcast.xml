@@ -6,6 +6,14 @@
         <language>en</language>
         <item>
             <title>0.1.1</title>
+            <pubDate>Sat, 07 Nov 2026 05:16:33 +0000</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/saiumesh535/termi-bin/releases/download/v0.1.1-7/Termi.zip" length="13459146" type="application/octet-stream" sparkle:edSignature="YM5ybwCH8rD1ZV3WVsuyUaNcXKaRSkqUC6P7xJ6N8gLD/zh9dzQSrcSEumYKN78Uuj2sZgxPqlB5ck0Q1H6dDw=="/>
+        </item>
+        <item>
+            <title>0.1.1</title>
             <pubDate>Thu, 05 Nov 2026 10:15:43 +0000</pubDate>
             <sparkle:version>6</sparkle:version>
             <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
@@ -19,14 +27,6 @@
             <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/saiumesh535/termi-bin/releases/download/v0.1.0-5/Termi.zip" length="12970114" type="application/octet-stream" sparkle:edSignature="1jkNUFtmKTt4HVIeufAiyImiEt0hVAtPKdwb8nzh+XEXAeRDn49UTJXyKVPyX00tMrTuv2WszapxTQOMk8JmCQ=="/>
-        </item>
-        <item>
-            <title>0.1.0</title>
-            <pubDate>Thu, 05 Nov 2026 06:53:13 +0000</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/saiumesh535/termi-bin/releases/download/v0.1.0-4/Termi.zip" length="12969649" type="application/octet-stream" sparkle:edSignature="mqU06gNk6lMSDNgo0ss4y5w7pZnhHhughOw5bFUruE2iFx/dKMWSOa/4OPqswibgoB/kPeakS2wz+OY3mztzBQ=="/>
         </item>
     </channel>
 </rss>
